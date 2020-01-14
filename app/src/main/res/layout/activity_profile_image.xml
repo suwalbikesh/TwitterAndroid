@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileImageActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/twitter2" />
+
+    <TextView
+        style="@style/TwitterTextStyle"
+        android:text="Pick a profile picture" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Have a favourite selfie? Upload it now."
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#FFFFFF"
+        android:scaleType="center"
+        app:srcCompat="@drawable/uploade" />
+
+
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnProfileImageFinish"
+            style="@style/TwitterLoginButtonStyle"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:layout_alignParentRight="true"
+            android:text="Finish"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

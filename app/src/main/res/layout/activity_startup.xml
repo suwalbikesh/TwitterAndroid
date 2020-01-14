@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.StartupActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/twitter2" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TwitterTextStyle"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-black"
+        android:text="See what's happening in the world right now." />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/TwitterButtonStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="sans-serif-black"
+        android:text="Create account"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Have an account already? " />
+
+        <TextView
+            android:id="@+id/txtBtnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:text="Log in"
+            android:textColor="#1DA1F2" />
+
+    </LinearLayout>
+
+</LinearLayout>
